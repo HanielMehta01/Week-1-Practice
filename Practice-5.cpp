@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-    cout << "Enter your selected number: ";
     int a;
+    cout << "Enter your selected number: ";
     cin >> a;
     if (a % 2 == 0)
     {
