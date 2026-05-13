@@ -17,5 +17,6 @@ int main()
     {
         cout << "Both of the given numbers are equal ";
     }
+    return 0;
 }
 {
