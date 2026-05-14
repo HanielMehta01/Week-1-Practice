@@ -2,8 +2,12 @@
 void meow(int n);
 int main(void)
 {
-    int n = get_int("What's n?");
-    meow(n);
+    int n;
+    do
+    {
+        printf("How many times do you want me to meow? ");
+    } while (n < 0)
+        meow(n);
 }
 void meow(int n)
 {
