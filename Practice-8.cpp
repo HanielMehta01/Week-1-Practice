@@ -9,24 +9,21 @@ int main()
     cin >> a >> b;
     cout << "Use first letter of the operation wich you want to do:- " << endl;
     cin >> c;
-    if (c == 'A' || c == 'a')
+    switch (c)
     {
+    case 'A': //  'a'
         cout << "The addition of the two numbers is : " << a + b << endl;
-    }
-    else if (c == 'S' || c == 's')
-    {
+        break;
+    case 'S': //  's'
         cout << "The subtraction of the two numbers is : " << a - b << endl;
-    }
-    else if (c == 'M' || c == 'm')
-    {
+        break;
+    case 'M': //  'm'
         cout << "The multiplication of the two numbers is : " << a * b << endl;
-    }
-    else if (c == 'D' || c == 'd')
-    {
+        break;
+    case 'D': //  'd'
         cout << "The division of the two numbers is : " << a / b << endl;
-    }
-    else
-    {
+        break;
+    default:
         cout << "Invalid input! Please enter A, S, M or D." << endl;
     }
     return 0;
